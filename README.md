@@ -1,6 +1,6 @@
 # `РЕШЕНО, оба задания в одном репозитории`
 ## что бы не тратить ресурс appveyor.
-## У каждой задачи свой метод и файл теста.
+## Каждая задача в виде отдельного модуля и файла теста.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/m34rpju8a35arbvx?svg=true)](https://ci.appveyor.com/project/RT-Vinsent/ajs-homeworks-6)
 
