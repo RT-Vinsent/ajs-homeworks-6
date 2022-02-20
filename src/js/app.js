@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 import orderByProps from './modules/orderbyprops';
+import destructuring from './modules/destructuring';
 
+/* ПРОВЕРКА ЗПЕРВОГО ЗАДАНИЯ */
 const swordsman = {
   name: 'мечник',
   health: 10,
@@ -12,3 +14,29 @@ const swordsman = {
 const sort = ['name', 'level'];
 
 console.log(orderByProps(swordsman, sort));
+
+/* ПРОВЕРКА ВТОРОГО ЗАДАНИЯ */
+const character = {
+  name: 'Лучник',
+  type: 'Bowman',
+  health: 50,
+  level: 3,
+  attack: 40,
+  defence: 10,
+  special: [
+    {
+      id: 8,
+      name: 'Двойной выстрел',
+      icon: 'http://...',
+      description: 'Двойной выстрел наносит двойной урон',
+    },
+    {
+      id: 9,
+      name: 'Нокаутирующий удар',
+      icon: 'http://...',
+      // <- обратите внимание, описание "засекречено"
+    },
+  ],
+};
+
+console.log(destructuring(character));
